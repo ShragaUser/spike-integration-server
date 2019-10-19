@@ -5,7 +5,8 @@ module.exports = {
         "ecmaVersion": 2018
     },
     "rules": {
-        "no-unused-vars": WARN
+        "no-unused-vars": OFF,
+        "no-undef": OFF
     },
     "env": {
         "amd": true,

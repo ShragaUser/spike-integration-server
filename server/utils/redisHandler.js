@@ -14,12 +14,9 @@ client.on("error", (err) => {
     console.error("Redis Error: " + err);
 })
 
-let redisHandler = {};
 
 const getValue = async (key) => await getAsync(key);
 const setValue = async (key, value) => client.set(key, value);
 
-redisHandler.getValue = getValue;
-redisHandler.setValue = setValue;
 
-module.exports = redisHandler;
+module.exports = { getValue, setValue };
