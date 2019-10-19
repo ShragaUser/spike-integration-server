@@ -32,7 +32,7 @@ defaults are set in ```./config/config.js``` and can be changed manually.
 
 
 ### Where to personalize code? 
-This template is Mostly Generic Express.js api. 
+This template is A Mostly Generic Express.js api. 
 
 All Spike handling code is in: ```./server/utils/getToken```
 
