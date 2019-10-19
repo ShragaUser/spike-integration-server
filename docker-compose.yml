@@ -1,0 +1,19 @@
+version: '2.1'
+
+services:
+  super-reverse-proxy:
+    image: super-reverse-proxy
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8000:8000
+  redis:
+    image: redis:latest
+    ports:
+      - '6379:6379'
+    command:
+      - redis-server
+      - '--appendonly'
+      - 'yes'
+
